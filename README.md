@@ -1,42 +1,35 @@
-# Atomic Assessment Template for Sinatra Projects
+# Toy - Web
 
-The purpose of an atomic is to assess _just one thing_.
+## List Formatter
 
-This is a template repo for creating atomic assessments. The idea is that you define a feature to build, and then set up everything _except one thing_. The student then needs to complete the feature.
+Build a website which begins with a single form field into which the user should type a comma-separated list of things (like their favorite authors). The next page should then display those actors as a `<ul>` (each in their own `<li>`).
 
-The repo that a student starts with should not have any distractions from the atomic's core learning objective. E.g. don't include a tests folder at all, unless the purpose of the atomic is to go over testing. Or don't include the files for the database at all, unless the atomic deals with persistent data.
+### Getting Started
 
-## Setup Guide
+#### Installation
 
-### Copying the template
+First, fork this repository, if you haven't already.
 
-Don't fork the repo. Instead:
+Then clone your fork on to your local development machine:
 
-1. Clone the repo locally.
-2. Rename the folder it created. Use the naming convention: **web-toy__dash-separated-name**
-3. From your cloned copy's folder...
-  1. `rm -rf .git`
-  2. `git init`
-  3. `git add .`
-  4. `git commit -m "First commit"`
-  5. `hub create omahacodeschool/web-toy__dash-separated-name`
-    - Use the real name!
-  6. `git push -u origin master`
+```zsh
+cd ~/Code
+git clone url_for_your_copy_of_this_assignment
+```
 
-Now you can work on this repo as you would normally work on anything else.
+(Note: You'll need to replace `url_for_your_copy_of_this_assignment` with the actual SSH URL for your repository, which looks something like `git@github.com:sumeetjain/web-toy__some-assignment.git`.)
 
-### Setting up the atomic
+That will create a folder named for the assignment in **~/Code**, and it will download the files from the repository into that folder.
 
-- Update _README.md
-   - Set title
-   - Update description
-- Set up any controllers/views (They'll be blank, but do provide the files at least)
+Next, `cd` into that newly created folder, and run the setup script:
 
-Also, empty folders don't get pushed with Git. If you want a student to have a starter folder of some kind, add a README.md to the folder.
+```zsh
+cd the-newly-created-folder
+bin/setup
+```
 
-### Final Steps
+(Note: You'll need to replace `the-newly-created-folder` with the actual name of the folder for your assignment.)
 
-- Make sure `bin/setup` works.
-- Delete folders/files that aren't relevant to the atomic.
-- Make sure you can solve the atomic yourself.
-- Delete this file and rename _README.md to README.md.
+You won't need to run the setup script for this assignment again.
+
+If the setup script does not return any failures or errors, you're ready to work on the assignment. Open the project folder in your code editor, and begin.
